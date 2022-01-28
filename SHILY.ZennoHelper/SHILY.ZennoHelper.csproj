@@ -7,8 +7,8 @@
     <ProjectGuid>{2D4A83A2-B925-4FDB-903A-5462FD843BF1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SHILY.ZennoHelper</RootNamespace>
-    <AssemblyName>SHILY.ZennoHelper</AssemblyName>
+    <RootNamespace>Shily.ZennoHelper</RootNamespace>
+    <AssemblyName>Shily.ZennoHelper</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -80,13 +80,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Extensions\FileExtensions.cs" />
     <Compile Include="Extensions\VariableExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Enums\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.2">
       <Visible>False</Visible>

@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ZennoLab.InterfacesLibrary.ProjectModel;
 
-namespace SHILY.ZennoHelper.Extensions
+namespace Shily.ZennoHelper.Extensions
 {
     public static class VariableExtensions
     {
@@ -28,9 +25,11 @@ namespace SHILY.ZennoHelper.Extensions
             var separators = new[] { '-', ':', ';', ' ' };
 
             if (variable is null)
+            {
                 if (throwArgumentException)
                     throw new ArgumentNullException($"'{nameof(variable)}' - Argument connot be null.");
                 else return result;
+            }
 
             if (separators.Any(x => variable.Contains(x)) &&
                 int.TryParse(variable.Split(separators)[0], out var numberFrom) &&
