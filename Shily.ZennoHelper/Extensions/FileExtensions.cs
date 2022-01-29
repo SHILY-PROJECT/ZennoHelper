@@ -7,7 +7,7 @@ namespace Shily.ZennoHelper.Extensions
     {
         private static readonly object locker = new object();
 
-        public static void DeleteFile(this FileInfo file, bool useThreadLocker = true)
+        public static void DeleteFile(this FileInfo file, bool useThreadLocker = false)
         {
             if (file.Exists is false) return;
 
